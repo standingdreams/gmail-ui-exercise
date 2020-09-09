@@ -1,0 +1,43 @@
+.c-footer {
+  font-size: 0.75em;
+  padding: 16px;
+
+  .l-container {
+    text-align: center;
+
+    @include respond-to("small") {
+      text-align: left;
+      align-items: flex-start;
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+
+  &__nav {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    max-width: 280px;
+    margin: 16px auto;
+
+    @include respond-to("small") {
+      margin: 0;
+      max-width: none;
+    }
+
+    a {
+      padding: 0 6px;
+    }
+  }
+
+  &__activity {
+    @include respond-to("small") {
+      text-align: right;
+    }
+  }
+
+  a {
+    color: #666;
+    display: block;
+  }
+}

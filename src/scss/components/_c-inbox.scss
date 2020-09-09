@@ -1,0 +1,13 @@
+.c-inbox {
+  .l-container {
+    width: 90%;
+
+    @include respond-to("small") {
+      align-items: flex-start;
+      display: flex;
+      justify-content: flex-start;
+      max-width: none;
+      width: 100%;
+    }
+  }
+}

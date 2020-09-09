@@ -25,10 +25,20 @@ const Layout = props => {
       <Header siteTitle={data.site.siteMetadata.title} />
       <div>
         <main>{children}</main>
-        <footer>
-          © {new Date().getFullYear()}, Built with
-          {` `}
-          <a href="https://www.gatsbyjs.org">Gatsby</a>
+        <footer className="c-footer">
+          <div className="l-container">
+            <div>
+              5.78 GB (34%) of 17 GB used
+              <a href="#">Manage</a>
+            </div>
+            <div className="c-footer__nav">
+              <a href="https://www.google.com/intl/en/policies/terms/" target="_blank" className="l9">Terms</a> · <a href="https://www.google.com/intl/en/policies/privacy/" target="_blank" className="l9">Privacy</a> · <a href="https://www.google.com/gmail/about/policy/" target="_blank" className="l9">Program Policies</a>
+            </div>
+            <div className="c-footer__activity">
+              Last account activity: 21 minutes ago
+              <a href="#">Details</a>
+            </div>
+          </div>
         </footer>
       </div>
     </>
