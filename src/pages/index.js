@@ -2,7 +2,6 @@ import React, { useState, useReducer } from "react"
 import moment from 'moment';
 import { useStaticQuery, graphql } from "gatsby"
 
-import emailData from "../data/emails.json"
 import Layout from "../components/layout"
 
 function reducer(state, action) {
