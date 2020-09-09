@@ -13,3 +13,13 @@ All tests are done via Cypress. To run tests, run `npm run test:e2e`.
 ### Current Tests
 - Test if email is deleted
 - Test if email is starred
+
+## ToDos
+- [ ] Display full email contents on click
+- [ ] Display starred emails
+- [ ] Displayed trashed emails
+- [ ] Use icon for trash instead of "Trash"
+- [ ] Create dropdown for tags
+- [ ] Create tests for starred inbox
+- [ ] Create tests for trash inbox
+- [ ] Create "read" and "unread" state
