@@ -61,6 +61,18 @@ const IndexPage = () => {
   }
 
   const [state, dispatch] = useReducer(reducer, initialState)
+  const messagesArray = () => {
+    switch(activeNav) {
+      case 'starred':
+        return state.star
+
+      case 'trash':
+        return state.trash
+
+      default:
+        return state.messages.filter(message => (activeNav !== 'inbox' ? message.tags.includes(state.activeTag) : true))
+    }
+  }
 
   return (
     <Layout title="Home">
@@ -90,7 +102,7 @@ const IndexPage = () => {
           <div className="emailList">
             <table className="emailList__table">
               <tbody>
-                {state.messages.filter(message => (activeNav !== 'inbox' ? message.tags.includes(state.activeTag) : true)).map(email => (
+                {messagesArray().map(email => (
                   <tr className={`emailList__item`} key={email.id}>
                     <td className={`emailList__sender`}>
                       <button className={`emailList__star${state.star.includes(email) ? ' emailList__star--active' : ''}`} onClick={() => {dispatch({type: 'star', payload: email})}}></button>
