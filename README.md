@@ -1,4 +1,4 @@
-# SalesLoft UI Exercise
+# UI Exercise
 This test was developed using Gatsby.
 
 ## Running Site
