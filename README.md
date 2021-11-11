@@ -1,5 +1,5 @@
 # UI Exercise
-This test was developed using Gatsby.
+A replica of Gmail using React. This exercise was developed using Gatsby.
 
 ## Running Site
 1. Clone repository to local system
